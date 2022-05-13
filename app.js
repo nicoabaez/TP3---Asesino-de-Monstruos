@@ -71,9 +71,7 @@ new Vue({
 
         terminarPartida: function () {
             this.hayUnaPartidaEnJuego = false;
-            if (confirm('Te has rendido... ¿Querés jugar de nuevo?')) {
-                this.empezarPartida();
-            }
+            confirm('Te has rendido... ¿Jugar de nuevo?')
         },
 
         ataqueDelMonstruo: function () {
@@ -92,14 +90,14 @@ new Vue({
         },
         verificarGanador: function () {
             if(this.saludMonstruo <= 0) {
-                if (confirm('¡Ganaste! ¿Querés jugar de nuevo?')) {
+                if (confirm('¡Ganaste! ¿Jugar de nuevo?')) {
                     this.empezarPartida();
                 } else {
                     this.hayUnaPartidaEnJuego = false;
                 }
                 return true;
             } else if (this.saludJugador <= 0) {
-                if (confirm('¡Perdiste! ¿Querés jugar de nuevo?')) {
+                if (confirm('¡Perdiste! ¿Jugar de nuevo?')) {
                     this.empezarPartida();
                 } else {
                     this.hayUnaPartidaEnJuego = false;

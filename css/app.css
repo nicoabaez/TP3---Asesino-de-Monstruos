@@ -44,12 +44,12 @@
 
 .log ul .player-turno {
     color: #eee;
-    background-color: goldenrod;
+    background-color: rgb(40, 143, 14);
 }
 
 .log ul .monster-turno {
     color: #eee;
-    background-color:rgb(3, 110, 12);
+    background-color:rgb(218, 22, 22);
 }
 
 button {
